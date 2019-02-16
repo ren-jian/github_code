@@ -1,0 +1,17 @@
+1、github代码库：https://github.com/ren-jian/github_code.git
+2、git安装： http://git-scm.com/download/win
+3、git库初始化建议：
+echo '#github_code' >>README.md 
+git init 
+git add README.md 
+git commit -m“first commit” 
+git remote add origin https://github.com/ren-jian/github_code.git
+git push -u origin master
+4、windows下git免密登陆：
+打开git bash控制终端后：
+cd ~
+vi .gitconfig
+在文件中加上如下：
+[credential] 
+helper = store –file .git-credentials 
+重新打开下bash终端，输入一次后，就不用再次输入了。
