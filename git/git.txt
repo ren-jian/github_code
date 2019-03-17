@@ -1,17 +1,17 @@
-1¡¢github´úÂë¿â£ºhttps://github.com/ren-jian/github_code.git
-2¡¢git°²×°£º http://git-scm.com/download/win
-3¡¢git¿â³õÊ¼»¯½¨Òé£º
+1ã€githubä»£ç åº“ï¼šhttps://github.com/ren-jian/github_code.git
+2ã€gitå®‰è£…ï¼š http://git-scm.com/download/win
+3ã€gitåº“åˆå§‹åŒ–å»ºè®®ï¼š
 echo '#github_code' >>README.md 
 git init 
 git add README.md 
-git commit -m¡°first commit¡± 
+git commit -mâ€œfirst commitâ€ 
 git remote add origin https://github.com/ren-jian/github_code.git
 git push -u origin master
-4¡¢windowsÏÂgitÃâÃÜµÇÂ½£º
-´ò¿ªgit bash¿ØÖÆÖÕ¶Ëºó£º
+4ã€windowsä¸‹gitå…å¯†ç™»é™†ï¼š
+æ‰“å¼€git bashæ§åˆ¶ç»ˆç«¯åï¼š
 cd ~
 vi .gitconfig
-ÔÚÎÄ¼şÖĞ¼ÓÉÏÈçÏÂ£º
+åœ¨æ–‡ä»¶ä¸­åŠ ä¸Šå¦‚ä¸‹ï¼š
 [credential] 
-helper = store ¨Cfile .git-credentials 
-ÖØĞÂ´ò¿ªÏÂbashÖÕ¶Ë£¬ÊäÈëÒ»´Îºó£¬¾Í²»ÓÃÔÙ´ÎÊäÈëÁË¡£
+helper = store â€“file .git-credentials 
+é‡æ–°æ‰“å¼€ä¸‹bashç»ˆç«¯ï¼Œè¾“å…¥ä¸€æ¬¡åï¼Œå°±ä¸ç”¨å†æ¬¡è¾“å…¥äº†ã€‚
