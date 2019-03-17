@@ -19,6 +19,7 @@
 
 4、插件
     Code Runner 运行bat等多种代码。可再文件-首选项-设置-扩展中打开终端窗口。输出栏右键可停止。
+    JS-CSS-HTML Formatter 格式化前台代码，ctrl+alt+f
 
 5、git
     在setting.json中添加 "git.path": "D:\\Software\\Git\\cmd\\git.exe"

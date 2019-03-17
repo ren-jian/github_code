@@ -27,6 +27,19 @@
     <!--定义网页作者:-->
     <meta http-equiv="refresh" content="30">
     <!--每30秒钟刷新当前页面:-->
+    <style type="text/css">
+        thead {
+            color: green;
+        }
+        
+        tbody {
+            color: blue;
+        }
+        
+        tfoot {
+            color: red;
+        }
+    </style>
 </head>
 
 <body style="background-color:rgb(209, 208, 168)">
@@ -59,6 +72,66 @@
     <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"><!--coordinates坐标-->
     <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"><!--rect矩形为x1,y1,x2,y2，circle圆形为x,y,radius-->
     </map>
+    <table border="1">
+        <caption>Monthly savings</caption>
+        <!--定义表格标题-->
+        <colgroup>
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+        <!--<colgroup> 标签用于对表格中的列进行组合，以便对其进行格式化。-->
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869207</td>
+            <td>My first CSS</td>
+            <td>$49</td>
+        </tr>
+    </table>
+    </table>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <!--表格的页眉-->
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <!--表格的页脚-->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <!--表格的主体-->
+    </table>
+    <ul>
+        <li>无序</li>
+        <li>列表</li>
+    </ul>
+    <ol>
+        <li>有序</li>
+        <li>列表</li>
+    </ol>
 </body>
 
 </html>
