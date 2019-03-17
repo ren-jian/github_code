@@ -200,7 +200,57 @@
     <form name="input" action="sun.htm" method="get">
         Username: <input type="text" name="user">
         <input type="submit" value="Submit">
+        <!--label定义了 <input> 元素的标签，一般为输入标题-->
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male" value="male"><br>
     </form>
+    <textarea rows="10" cols="30">
+            我是一个文本框。
+    </textarea>
+    <!--<fieldset>定义了一组相关的表单元素，并使用外框包含起来，<legend>定义了<fieldset>元素的标题-->
+    <form>
+        <fieldset>
+            <legend>Personalia:</legend>
+            Name: <input type="text"><br> Email: <input type="text"><br> Date of birth: <input type="text">
+        </fieldset>
+    </form>
+    <!--<select>定义了下拉选项列表，<optgroup>定义选项组，<option>定义下拉列表中的选项-->
+    <select>
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+    <iframe src="mercur.htm" width="200" height="200"></iframe>
+    <iframe src="venus.htm" frameborder="0"></iframe>
+    <!--frameborder 属性用于定义iframe表示是否显示边框。设置属性值为 "0" 移除iframe的边框:-->
+    <iframe src="sun.htm" name="iframe_a"></iframe>
+    <p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+    <!--使用iframe来显示目标链接页面-->
+    <!--<script> 标签用于定义客户端脚本，比如 JavaScript。<script> 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。
+        JavaScript 最常用于图片操作、表单验证以及内容动态更新。<noscript> 标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。-->
+    <p id="demo">JavaScript 能够直接写入 HTML 输出流中：</p>
+    <script>
+        document.write("Hello World!")
+        document.write("<h1>这是一个标题</h1>")
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!"
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#ff0000" // 改变样式
+        }
+    </script>
+    <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+    <button type="button" onclick="myFunction()">点我</button>
+    <p>HTML 中的预留字符必须被替换为字符实体。小于号(&lt;)，空格(&nbsp;)，大于号(&gt;)，双引号(&quot;)</p>
+    <p>URL - 统一资源定位器：scheme://host.domain:port/path/filename<br> scheme - 定义因特网服务的类型。最常见的类型是 http<br> host - 定义域主机（http 的默认主机是 www）<br> domain - 定义因特网域名，比如 runoob.com<br> :port - 定义主机上的端口号（http 的默认端口号是 80）<br> path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。<br> filename
+        - 定义文档/资源的名称</p>
+    <p>http 超文本传输协议 以 http:// 开头的普通网页。不加密。<br> https 安全超文本传输协议 安全网页，加密所有信息交换。<br> ftp 文件传输协议 用于将文件下载或上传至网站。<br> file 您计算机上的文件。</p>
+    <p>URL 字符编码 URL 只能使用 ASCII 字符集.<br> URL 编码使用 "%" 其后跟随两位的十六进制数来替换非 ASCII 字符。<br> URL 不能包含空格。URL 编码通常使用 + 来替换空格。</p>
 </body>
 
 </html>
