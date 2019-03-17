@@ -33,7 +33,7 @@
         }
         
         tbody {
-            color: blue;
+            color: rgb(255, 0, 0);
         }
         
         tfoot {
@@ -132,6 +132,75 @@
         <li>有序</li>
         <li>列表</li>
     </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <!--自定义列表不仅仅是一列项目，而是项目及其注释的组合。自定义列表以 <dl> 标签开始。每个自定义列表项以 <dt> 开始。每个自定义列表项的定义以 <dd> 开始。-->
+    <!--内联元素在显示时通常不会以新行开始，实例: <b>, <td>, <a>, <img>。块级(区块)元素在浏览器显示时，通常会以新行来开始（和结束），实例: <h1>, <p>, <ul>, <table>-->
+    <div style="color:#0000FF">
+        <h3>这是一个在 div 元素中的标题。</h3>
+        <p>这是一个在 div 元素中的文本。</p>
+    </div>
+    <!--HTML <div> 元素是块级元素，它可用于组合其他 HTML 元素的容器。<div> 元素没有特定的含义。它取代了使用表格定义布局的老式方法。-->
+    <p>我的母亲有 <span style="color:blue;font-weight:bold">蓝色</span> 的眼睛，我的父亲有 <span style="color:darkolivegreen;font-weight:bold">碧绿色</span> 的眼睛。</p>
+    <!--HTML <span> 元素是内联元素，可用作文本的容器<span> 元素也没有特定的含义。当与 CSS 一同使用时，<span> 元素可用于为部分文本设置样式属性。-->
+    <!--使用 <div> 元素的网页布局-->
+    <div id="container" style="width:500px">
+        <div id="header" style="background-color:#FFA500;">
+            <h1 style="margin-bottom:0;">主要的网页标题</h1>
+        </div>
+        <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+            <b>菜单</b><br> HTML
+            <br> CSS
+            <br> JavaScript
+        </div>
+        <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+            内容在这里</div>
+
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            版权 © runoob.com</div>
+    </div>
+    <!--使用 <table> 元素的网页布局，第一和最后一行使用 colspan 属性来横跨两列
+        即使可以使用 HTML 表格来创建漂亮的布局，但设计表格的目的是呈现表格化数据 - 表格不是布局工具！-->
+    <table width="500" border="0">
+        <tr>
+            <td colspan="2" style="background-color:#FFA500;">
+                <h1>主要的网页标题</h1>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#FFD700;width:100px;">
+                <b>菜单</b><br> HTML
+                <br> CSS
+                <br> JavaScript
+            </td>
+            <td style="background-color:#eeeeee;height:200px;width:400px;">
+                内容在这里</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color:#FFA500;text-align:center;">
+                版权 © runoob.com</td>
+        </tr>
+    </table>
+    <!--表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。-->
+    <form>
+        First name: <input type="text" name="firstname"><br> Last name: <input type="text" name="lastname">
+        <!--注意:表单本身并不可见。同时，在大多数浏览器中，文本域的缺省宽度是20个字符。-->
+        Password: <input type="password" name="pwd"><br>
+        <!--radio单选框，name相同的时候只能选一个-->
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        <!--checkbox定义了复选框. 用户需要从若干给定的选择中选取一个或若干选项-->
+        <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car">I have a car<br>
+    </form>
+    <form name="input" action="sun.htm" method="get">
+        Username: <input type="text" name="user">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
