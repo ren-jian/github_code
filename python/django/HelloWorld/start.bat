@@ -1,0 +1,1 @@
+python e:\code\python\django\HelloWorld\manage.py runserver 127.0.0.1:8000

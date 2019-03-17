@@ -7,7 +7,7 @@
     <base href="file:///E:/code/html/" target="_blank">
     <!--该标签作为HTML文档中所有的链接标签的默认链接:-->
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <!--定义了文档与外部资源之间的关系,通常用于链接到样式表:-->
+    <!--定义了文档与外部资源之间的关系,通常用于链接到样式表:外部样式表/外部引用-->
     <style type="text/css">
         body {
             background-color: rgb(209, 208, 168)
@@ -17,7 +17,7 @@
             color: blue
         }
     </style>
-    <!--<style>标签定义了HTML文档的样式文件引用地址,在<style>元素中你也可以直接添加样式来渲染 HTML文档:-->
+    <!--<style>标签定义了HTML文档的样式文件引用地址,在<style>元素中你也可以直接添加样式来渲染 HTML文档:内部样式表-->
     <!--meta标签描述了一些基本的元数据。-->
     <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
     <!--为搜索引擎定义关键词-->
@@ -29,26 +29,36 @@
     <!--每30秒钟刷新当前页面:-->
 </head>
 
-<body>
+<body style="background-color:rgb(209, 208, 168)">
     <h1>我的第一个h1标题</h1>
-    <h2>这是一个h2标题</h2>
-    <!--<h3>这是一个h3标题</h3>-->
+    <h3 style="text-align:center;">居中对齐的标题</h3>
     <p>我的第一个段落。</p>
-    <p>这是另外一个段落。</p>
-    <a href="http://www.runoob.com">这是一个链接</a>
-    <img src="images/logo.png" width="100" height="60" /><br/>
-    <img src="images/html属性.PNG" width="600" height="220" />
+    <!--内联样式-->
+    <p style="color:rgb(251, 255, 0);margin-left:20px; ">这是另外一个段落。</p>
+    <!--我们可以使用font-family（字体），color（颜色），和font-size（字体大小）属性来定义字体的样式:-->
+    <p style="font-family:arial;color:red;font-size:20px;">一个段落1。</p>
+    <a href="http://www.runoob.com ">这是一个链接</a>
+    <img src=".images/logo.png " width="100 " height="60 " alt="图片丢失了" /><br/>
+    <!--alt 属性用来为图像定义一串预备的可替换的文本，在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。-->
+    <img src="images/html属性.PNG " width="600 " height="220 " />
     <hr> 标签在 HTML 页面中创建水平线。
     <!-- 这是一个注释 -->
     <b>粗体 </b><strong>加重 </strong><em>着重 </em><i>斜体 </i><small>小号 </small><sub>下标 </sub><sup>上标 </sup><ins>插入 </ins><del>删除 </del>
     <code>计算机代码 </code><kbd>键盘码 </kbd><samp>计算机代码样本 </samp><var>变量</var><pre>预格式文本</pre>
     <abbr>缩写</abbr><address>地址</address><bdo>文字方向</bdo>
     <blockquote>长的引用</blockquote><q>短的引用</q><cite> 引证，引用 </cite><dfn>定义项目 </dfn>
-    <a href="http://www.runoob.com/" target="_blank">访问菜鸟教程!</a>
-    <p>如果你将"target"属性设置为&quot;"_blank"&quot;, 链接将在新窗口打开。</p>
-    <a id="tips">有用的提示部分</a><a href="#tips">访问有用的提示部分,跳转到base默认链接</a>
-    <!--注释： 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="http://www.runoob.com/html"，就会向服务器产生两次 HTTP 请求。
-    这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="http://www.runoob.com/html/"。-->
+    <a href="http://www.runoob.com/ " target="_blank ">访问菜鸟教程!</a>
+    <p>如果你将"target "属性设置为&quot;"_blank "&quot;, 链接将在新窗口打开。</p>
+    <a id="tips ">有用的提示部分</a><a href="#tips ">访问有用的提示部分,跳转到base默认链接</a>
+    <!--注释： 请始终将正斜杠添加到子文件夹。假如这样书写链接：href="http://www.runoob.com/html "，就会向服务器产生两次 HTTP 请求。
+    这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="http://www.runoob.com/html/ "。-->
+    <p>点击太阳或其他行星，注意变化：</p>
+    <img src="./images/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap"><!--<map>定义图像地图-->
+    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"><!--<area>定义图像地图中的可点击区域-->
+    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"><!--coordinates坐标-->
+    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"><!--rect矩形为x1,y1,x2,y2，circle圆形为x,y,radius-->
+    </map>
 </body>
 
 </html>
