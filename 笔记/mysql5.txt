@@ -1,0 +1,16 @@
+一、Mysql5安装初始化
+1、初始化数据库  mysqld --initialize --console  初始密码：qDeWrepgQ9+f
+2、mysqld install
+3、注意: 在 5.7 需要初始化 data 目录  mysqld --initialize-insecure 
+4、启动数据库  net start mysql
+5、mysql -u root -p
+登陆失败：my.ini中在[mysqld]下面添加skip-grant-tables，保存退出。重启，直接Enter进入不输密码。
+更改密码：use mysql; update user set authentication_string=password("password") where user="root"; flush privileges;
+退出数据库quit; 删除my.ini中的skip-grant-tables，重启即可。
+
+启动哪个数据库，Django将会连接哪个数据库。
+二、常用命令
+1、数据库操作：
+CREATE DATABASE test;
+SHOW DATABASES;
+

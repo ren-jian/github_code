@@ -1,0 +1,23 @@
+1、创建项目
+scrapy startproject mySpider
+
+2、明确目标
+要爬取的内容(mySpider/items.py)
+
+3、制作爬虫 
+（spiders/itcastSpider.py）
+在mySpider/spiders目录下创建一个名为itcast的爬虫，并指定爬取域的范围：
+scrapy genspider itcast "itcast.cn"
+在mySpider目录下执行：
+scrapy crawl itcast
+
+4、保存数据
+scrapy crawl itcast -o teachers.json  # 在settings.py中设置FEED_EXPORT_ENCODING = 'UTF-8'，保存的为中文
+scrapy crawl itcast -o teachers.jsonlines
+scrapy crawl itcast -o teachers.csv  # cvs打开乱码：使用记事本打开CSV文件，点击菜单：文件-另存为，编码方式选择ANSI，保存完毕后，再用EXCEL打开这个文件就不会出现乱码的情况。
+scrapy crawl itcast -o teachers.xml
+
+XPath:
+//div[@class="mine"]: 选择所有具有 class="mine" 属性的 div 元素
+
+

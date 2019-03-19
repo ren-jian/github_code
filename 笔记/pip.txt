@@ -1,0 +1,5 @@
+1、生成依赖文件
+pip3 freeze >requirements.txt #会生成所有项目
+pip3 install pipreqs；pipreqs E:\code\python\django\HelloWorld --encoding=utf-8 #生成指定目录的依赖
+2、安装依赖
+pip3 install -r requirements.txt
