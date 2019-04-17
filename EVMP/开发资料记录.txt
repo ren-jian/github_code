@@ -1,0 +1,16 @@
+一、项目名称
+Engineering Visualization Management Platform
+工程可视化管理平台:EVMP
+
+二、项目构建
+1、创建项目 E:\project>d:\Python\Scripts\django-admin.py startproject EVMP
+2、启动 start.py python manage.py runserver 127.0.0.1:8000
+http://127.0.0.1:8000/
+3、创建应用
+E:\project\EVMP>d:\Python\Scripts\django-admin.py startapp servermgt
+4、mysql
+mysql -u root -p
+password
+数据库名称：evmpdb
+python manage.py makemigrations 记录变化
+python manage.py migrate 生成表
